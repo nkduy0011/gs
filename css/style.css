@@ -3,6 +3,9 @@
 	padding: 0;
 	font-family: sans-serif;
 }
+a {
+	text-decoration: none;
+}
 section{
 	display: flex;
 	justify-content: center;
@@ -26,7 +29,6 @@ section{
 }
 .contetnt-wrap {
 	display: grid;
-	width: 100%;
 }
 .header {
 	width: 100%;
@@ -35,7 +37,6 @@ section{
 	overflow: hidden;
 	background-image: url(../img/headerbg.png);
 	background-position: center; 
-	display: grid;
 }
 .logo-game {
 	position: absolute;
@@ -58,20 +59,16 @@ section{
 	font-size: 21px;
 	color: #aaa;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	transition: background-color color 0.3s;
+	justify-content: center;
+	transition: background-color, color  0.3s;
 }
-.btn-header a {
-	text-decoration: none;
-}
-.btn-header div:hover {
+.btn-header a:hover div{
 	background-color:rgba(02,11,42,1);
 	color: #dabebe;
 }
 .content-header {
 	width: 100%;
-	height: 100%;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -93,8 +90,6 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-decoration: none;
-
 }
 .btn-play  a span:nth-child(1){
 	width: 48px;
