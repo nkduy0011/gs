@@ -3,6 +3,7 @@
 	<title>Genshin impact</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -22,10 +23,90 @@
 				</div>
 			</div>
 		</div>
-		<div class="info">info</div>
-		<div class="banner">banner</div>
-		<div class="follow">follow</div>
-		<div class="footer">footer</div>
+		<div class="content-body">
+			<div class="info">
+				<div class="title-content">thông tin phiên bản</div>
+				<div class="info-items">
+					<div class="info-item">
+						<div class="item"><img src="img/info1.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+					<div class="info-item">
+						<div class="item"><img src="img/info2.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+					<div class="info-item">
+						<div class="item"><img src="img/info3.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+					<div class="info-item">
+						<div class="item"><img src="img/info4.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+				</div>
+				<div class="info-items">
+					<div class="info-item">
+						<div class="item"><img src="img/info5.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+					<div class="info-item">
+						<div class="item"><img src="img/info6.png"><a href="#"><img src="img/iconGo.png"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="title-content">tính năng đặc sắc</div>
+				<section>
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide"><img src="img/slide1.png"></div>
+					      <div class="swiper-slide"><img src="img/slide2.png"></div>
+					      <div class="swiper-slide"><img src="img/slide3.png"></div>
+					      <div class="swiper-slide"><img src="img/slide4.png"></div>
+					      <div class="swiper-slide"><img src="img/slide5.png"></div>
+					      <div class="swiper-slide"><img src="img/slide6.png"></div>
+					    </div>
+					    <!-- Add Pagination -->
+				    	<div class="swiper-pagination"></div>
+					</div>
+				</section>
+			</div>
+			<div class="follow">
+				<div class="title-content">theo dõi chúng tôi</div>
+				<div class="links">
+					<img src="img/fb.png">
+					<img src="img/twitter.png">
+					<img src="img/youtube.png">
+					<img src="img/discord.png">
+					<img src="img/reddit.png">
+					<img src="img/forum.png">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="language-setting"></div>
+			<div class="logo-footer"></div>
+			<div class="footer-content"></div>
+		</div>
 	</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+    });
+  </script>
 </body>
 </html>

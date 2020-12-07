@@ -6,30 +6,10 @@
 a {
 	text-decoration: none;
 }
-section{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.swiper-container {
-  width: 1176px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 814px;
-  height: 100%;
-
-}
-.swiper-wrapper {
-	margin-bottom: 50px;
-	cursor: grab;
-}
 .contetnt-wrap {
 	display: grid;
 }
+/*header css*/
 .header {
 	width: 100%;
 	height: 1106px;
@@ -54,8 +34,8 @@ section{
 	height: 56px;
 	margin-right: 60px;
 	border-radius: 50px;
-	background-color:rgba(02,11,42,0.65);
-	border:1px solid #1e3686;
+	background-color:rgba(02,11,42,0.5);
+	border:1px solid #899cda;
 	font-size: 21px;
 	color: #aaa;
 	display: flex;
@@ -73,6 +53,7 @@ section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	top: 50%;
 }
 .btn-play {
@@ -90,6 +71,7 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 }
 .btn-play  a span:nth-child(1){
 	width: 48px;
@@ -99,7 +81,7 @@ section{
 	color: rgba(255,255,255,1);
 	transition:color 0.3s;
 }
-.btn-play  a span:nth-child(2){
+.btn-play a span:nth-child(2){
 	position: absolute;
 	left: 15px;
 	font-size: 24px;
@@ -107,10 +89,129 @@ section{
 	color: rgba(0,0,0,0);
 	transition:color 0.3s;
 }
-.btn-play  a:hover span:nth-child(1){
+.btn-play a:hover span:nth-child(1){
 	color: rgba(0,0,0,0);
 }
 .btn-play  a:hover span:nth-child(2){
 	color: rgba(255,255,255,1);
 }
+/*content css*/
+.content-body {
+	width: 100%;
+	height: 3850px;
+	margin-top: -400px;
+	position: relative;
+	overflow: hidden;
+	background-image: url(../img/contentbg.png);
+	background-position: center; 
+}
+.content-body .info {
+	margin-top: 500px;
+}
+.content-body .title-content {
+	margin-bottom: 50px;
+	width: 100%;
+	height: 324px;
+	color: #7C77B8;
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/layoutcontent.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.content-body .info .info-items {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.content-body .info .info-items .info-item {
+	width: 288px;
+	height: 517px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	transition: all 0.3s;
+}
+.content-body .info .info-items .info-item .item {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}.content-body .info .info-items .info-item .item a{
+	position: absolute;
+	bottom: 45px;
+}
+.content-body .info .info-items .info-item:hover{
+	background-image: url(../img/layoutinfoitem.png);
+	transform: translateY(-20px);
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-container {
+  width: 1176px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 814px;
+  height: 100%;
 
+}
+.swiper-wrapper {
+	margin-bottom: 50px;
+	cursor: grab;
+}
+.follow {
+	width: 100%;
+	margin-top: -250px;
+	height: 1200px;
+	position: relative;
+	overflow: hidden;
+	background-image: url(../img/linkbg.png);
+	background-position: center; 
+	display: flex;
+	justify-content: center;
+}
+.content-body .follow .title-content {
+	position: absolute;
+	top : 400px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 324px;
+	color: #FFF;
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/layoutcontent.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.content-body .follow .links {
+	position: absolute;
+	bottom: 350px;
+}
+.content-body .follow .links img{
+	opacity: 0.6;
+	margin: auto 20px;
+	transition: opacity 0.3s;
+}
+.content-body .follow .links img:hover {
+	opacity: 1;
+}
